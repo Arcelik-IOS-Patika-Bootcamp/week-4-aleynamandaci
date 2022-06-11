@@ -15,6 +15,7 @@
 		42615F702854F9910053D5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42615F6E2854F9910053D5FC /* LaunchScreen.storyboard */; };
 		42615F792854FAB40053D5FC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42615F772854FAB40053D5FC /* TableViewCell.swift */; };
 		42615F7A2854FAB40053D5FC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42615F782854FAB40053D5FC /* TableViewCell.xib */; };
+		42615F7C285531A00053D5FC /* CryptoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42615F7B285531A00053D5FC /* CryptoObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		42615F712854F9910053D5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42615F772854FAB40053D5FC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		42615F782854FAB40053D5FC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		42615F7B285531A00053D5FC /* CryptoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				42615F712854F9910053D5FC /* Info.plist */,
 				42615F772854FAB40053D5FC /* TableViewCell.swift */,
 				42615F782854FAB40053D5FC /* TableViewCell.xib */,
+				42615F7B285531A00053D5FC /* CryptoObject.swift */,
 			);
 			path = "homework-week-4-aleynamandaci";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				42615F792854FAB40053D5FC /* TableViewCell.swift in Sources */,
 				42615F642854F98E0053D5FC /* AppDelegate.swift in Sources */,
 				42615F662854F98E0053D5FC /* SceneDelegate.swift in Sources */,
+				42615F7C285531A00053D5FC /* CryptoObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

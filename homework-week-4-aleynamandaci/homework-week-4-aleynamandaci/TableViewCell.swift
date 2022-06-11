@@ -9,9 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    @IBOutlet private(set) weak var cryptoLogo: UIImageView!
     
+    @IBOutlet private(set) weak var cryptoName: UILabel!
     
+    @IBOutlet private(set) weak var cryptoSymbol: UILabel!
     
+    @IBOutlet private(set) weak var cryptoPrice: UILabel!
     
 
     override func awakeFromNib() {
