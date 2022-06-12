@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         setupUI()
+        
+        fetchData()
     }
 
     private func setupUI(){
@@ -28,9 +30,19 @@ class ViewController: UIViewController {
     private func fetchData(){
         
         if let url = URL.init(string: "https://api.nomics.com/v1/currencies/ticker?key=815066069d8b357df3a9ca10f7d184e70ab8ef8d"){
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                print(response)
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                
+                do{
+                    guard let data = data else {
+                        return
+                    }
+                    let object = try JSONDecoder().decode([CryptoObject].self, from: data)
+                    print(object)
+                } catch {
+                    print(error)
+                }
             }
+            task.resume()
         }
         
     }

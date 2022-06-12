@@ -11,6 +11,13 @@ struct CryptoObject : Decodable {
     
     let cryptoName : String
     let cryptoSymbol : String
-    let cryptoPrice : Double
+    let cryptoPrice : String
     let cryptoLogoUrl : String
+    
+    enum CodingKeys : String , CodingKey {
+        case cryptoName = "name"
+        case cryptoSymbol = "symbol"
+        case cryptoLogoUrl = "logo_url"
+        case cryptoPrice = "price"
+    }
 }
