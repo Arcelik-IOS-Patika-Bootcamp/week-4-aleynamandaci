@@ -10,8 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var coinData : [CryptoObject] = []
-    //private var priceChange : [The7D] = []
-
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
