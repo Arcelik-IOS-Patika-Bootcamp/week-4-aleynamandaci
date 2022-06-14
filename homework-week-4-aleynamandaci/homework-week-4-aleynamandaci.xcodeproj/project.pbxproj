@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424047B9285911CF00F21037 /* crypto.png in Resources */ = {isa = PBXBuildFile; fileRef = 424047B8285911CF00F21037 /* crypto.png */; };
 		42615F642854F98E0053D5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42615F632854F98E0053D5FC /* AppDelegate.swift */; };
 		42615F662854F98E0053D5FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42615F652854F98E0053D5FC /* SceneDelegate.swift */; };
 		42615F682854F98E0053D5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42615F672854F98E0053D5FC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		424047B8285911CF00F21037 /* crypto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crypto.png; path = ../../../../Desktop/crypto.png; sourceTree = "<group>"; };
 		42615F602854F98E0053D5FC /* homework-week-4-aleynamandaci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "homework-week-4-aleynamandaci.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42615F632854F98E0053D5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42615F652854F98E0053D5FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				42615F622854F98E0053D5FC /* homework-week-4-aleynamandaci */,
+				424047B8285911CF00F21037 /* crypto.png */,
 				42615F612854F98E0053D5FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424047B9285911CF00F21037 /* crypto.png in Resources */,
 				42615F702854F9910053D5FC /* LaunchScreen.storyboard in Resources */,
 				42615F7A2854FAB40053D5FC /* TableViewCell.xib in Resources */,
 				42615F6D2854F9910053D5FC /* Assets.xcassets in Resources */,

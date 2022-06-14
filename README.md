@@ -10,3 +10,6 @@ Kripto paraları gösteren uygulama yazıyoruz. Uygulama içerisinde 2 zorunlu y
 Derste işlediğimiz diğer yapıları kullanmak opsiyonel/
 
 Herhangi bir api yi kullanmak serbest
+
+
+![crypto](crypto.png)
