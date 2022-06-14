@@ -17,7 +17,8 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet private(set) weak var cryptoPrice: UILabel!
     
-
+    @IBOutlet private(set) weak var cryptoChangePercentage: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

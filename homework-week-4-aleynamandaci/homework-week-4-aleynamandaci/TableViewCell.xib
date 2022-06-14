@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="homework_week_4_aleynamandaci" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="486" height="119"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="486" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -39,27 +39,35 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chu-ku-TWI">
-                        <rect key="frame" x="275" y="30" width="52" height="26.5"/>
+                        <rect key="frame" x="275" y="20" width="52" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71C-um-OrD">
+                        <rect key="frame" x="275" y="54.5" width="52" height="26.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Chu-ku-TWI" firstAttribute="leading" secondItem="oOM-in-r5f" secondAttribute="trailing" constant="15" id="4QT-Eh-euL"/>
                     <constraint firstItem="OM6-li-HTZ" firstAttribute="top" secondItem="oOM-in-r5f" secondAttribute="bottom" constant="20" id="5HQ-rG-2BF"/>
-                    <constraint firstItem="Chu-ku-TWI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="IDM-fV-2AV"/>
+                    <constraint firstItem="71C-um-OrD" firstAttribute="leading" secondItem="e68-JG-wz2" secondAttribute="trailing" constant="170" id="HyP-ND-uhU"/>
                     <constraint firstItem="oOM-in-r5f" firstAttribute="leading" secondItem="e68-JG-wz2" secondAttribute="trailing" constant="15" id="KLq-Ro-dEh"/>
                     <constraint firstItem="oOM-in-r5f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SvE-Ah-4Ct"/>
                     <constraint firstAttribute="bottom" secondItem="e68-JG-wz2" secondAttribute="bottom" constant="3" id="ZIY-zn-bQD"/>
-                    <constraint firstItem="Chu-ku-TWI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b82-Ug-G2K"/>
+                    <constraint firstItem="Chu-ku-TWI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ksP-38-MNm"/>
                     <constraint firstItem="e68-JG-wz2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="o8O-ez-WU4"/>
                     <constraint firstItem="OM6-li-HTZ" firstAttribute="leading" secondItem="e68-JG-wz2" secondAttribute="trailing" constant="15" id="s9Z-GS-zjw"/>
-                    <constraint firstItem="Chu-ku-TWI" firstAttribute="leading" secondItem="oOM-in-r5f" secondAttribute="trailing" constant="15" id="ulP-Lf-g8a"/>
+                    <constraint firstItem="71C-um-OrD" firstAttribute="top" secondItem="Chu-ku-TWI" secondAttribute="bottom" constant="8" id="vda-h3-lct"/>
                     <constraint firstItem="e68-JG-wz2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zFd-gV-2dt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cryptoChangePercentage" destination="71C-um-OrD" id="kjD-hT-v1O"/>
                 <outlet property="cryptoLogo" destination="e68-JG-wz2" id="S2k-Ci-piR"/>
                 <outlet property="cryptoName" destination="oOM-in-r5f" id="00h-1i-F9Q"/>
                 <outlet property="cryptoPrice" destination="Chu-ku-TWI" id="99B-tw-Ef3"/>

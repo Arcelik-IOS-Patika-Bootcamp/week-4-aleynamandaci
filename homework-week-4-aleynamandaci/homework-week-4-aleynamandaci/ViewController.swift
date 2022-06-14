@@ -72,13 +72,14 @@ extension ViewController : UITableViewDataSource{
         let rowItem = coinData[indexPath.row]
         
         if rowItem.cryptoChangePercentage24h < 0 {
-            cell.cryptoPrice.text = String(format: "%.3f", rowItem.cryptoChangePercentage24h)
-            cell.cryptoPrice.textColor = .systemRed
-        }else {
-            cell.cryptoPrice.text = String(format: "%.3f", rowItem.cryptoChangePercentage24h)
-            cell.cryptoPrice.textColor = .systemGreen
+            cell.cryptoChangePercentage.text = String(format: "%.3f", rowItem.cryptoChangePercentage24h)
+            cell.cryptoChangePercentage.textColor = .systemRed
+            }else {
+            cell.cryptoChangePercentage.text = String(format: "%.3f", rowItem.cryptoChangePercentage24h)
+            cell.cryptoChangePercentage.textColor = .systemGreen
         }
     
+        cell.cryptoPrice.text = String(rowItem.cryptoPrice)
         cell.cryptoName.text = rowItem.cryptoName
        
         cell.cryptoSymbol.text = rowItem.cryptoSymbol
