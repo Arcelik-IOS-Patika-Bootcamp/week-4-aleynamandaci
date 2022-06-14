@@ -12,4 +12,4 @@ Derste işlediğimiz diğer yapıları kullanmak opsiyonel/
 Herhangi bir api yi kullanmak serbest
 
 
-![crypto](crypto.png =250x500)
+<img src="crypto.jpg" width="250" height="500" />
