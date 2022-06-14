@@ -12,4 +12,4 @@ Derste işlediğimiz diğer yapıları kullanmak opsiyonel/
 Herhangi bir api yi kullanmak serbest
 
 
-![crypto][crypto.png]{height=500px width=250px}
+![crypto](crypto.png){height=500px width=250px}
