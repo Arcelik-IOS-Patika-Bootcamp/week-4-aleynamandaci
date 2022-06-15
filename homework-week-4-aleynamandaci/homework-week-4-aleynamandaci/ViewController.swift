@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         fetchData()
     }
 
+    //func for updating tableView
     private func setupUI(){
         tableView.delegate = self
         tableView.dataSource = self
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: "CryptoCell")
     }
     
+    //func for aPI request
     private func fetchData(){
         
         if let url = URL.init(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc"){
@@ -59,17 +61,19 @@ extension ViewController : UITableViewDelegate{
     
 }
 
+//tableView extension
 extension ViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return coinData.count
     }
     
-    
+    //func for updating tableView cell labels and imageView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! TableViewCell
         
         let rowItem = coinData[indexPath.row]
         
+        //if-else statement for change label text color which depends changePercentage
         if rowItem.cryptoChangePercentage24h < 0 {
             cell.cryptoChangePercentage.text = String(format: "%.3f", rowItem.cryptoChangePercentage24h)
             cell.cryptoChangePercentage.textColor = .systemRed
@@ -90,7 +94,7 @@ extension ViewController : UITableViewDataSource{
     
     
 }
-
+//extension for getting image url
 extension UIImageView {
     func loadFrom(URLAddress: String) {
         guard let url = URL(string: URLAddress) else {
